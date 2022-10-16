@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Fira+Sans&family=Nunito&family=Roboto+Condensed&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .2s linear;
+  font-family: var(--font-nunito);
+}
+
+/* font-family: 'Alkalami', serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+:root {
+  --font-fira: 'Alkalami', serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-alkalami: 'Alkalami', serif;
+  --font-roboto: 'Roboto Condensed', sans-serif;
+  --root-color: #f9ca24;
+  --white-color: #fff;
+  --bg-color: #160f29;
+  --header-color: #0b132b;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--root-color);
+  border-radius: 6rem;
+}
+
+::selection {
+  background: var(--root-color);
+  color: #333;
+}
+
+body {
+  background: var(--bg-color);
+  padding-left:35rem;
+  color: var(--white-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 5rem;
+}
+
+.heading span {
+  color: var(--root-color);
+}
+
+.head span {
+  color: #fff;
+}
+
+.head {
+  color: var(--root-color);
+}
+
+/* header section styles  */
+header {
+  width: 35rem;
+  height: 100%;
+  background: var(--header-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+.container img {
+  width: 15rem;
+  height: 15rem;
+  border: .5rem solid var(--root-color);
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.container h1 {
+  font-size: 4rem;
+  color: var(--white-color);
+  margin-top: 1rem;
+  letter-spacing: 5px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 2rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-family: var(--font-fira);
+}
+
+header .navbar {
+  width: 100%;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+.navbar ul li a {
+  color: var(--white-color);
+  font-size: 2rem;
+  border: 3px solid #f53b57;
+  display: block;
+  padding: 1rem 1.5rem;
+  border-radius: 6rem;
+  transition: .5s;
+}
+
+.navbar ul li a:hover {
+  background: var(--root-color);
+  color: #333;
+  border: 3px solid #fff;
+  letter-spacing:3px;
+  font-family:var(--font-fira);
+}
+
+/* menubar styls  */
+#menuBar {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  background: var(--root-color);
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--white-color);
+  background: #1e272e;
+
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: border .25s;
+  border: 0;
+}
+
+#menuBar:hover {
+  border: .3rem solid var(--root-color);
+}
+
+/* home section styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+.home .user {
+  padding: 1rem;
+}
+
+.user h3 {
+  font-size: 2.5rem;
+  color: #ddd;
+}
+
+.user h1 {
+  font-size: 4rem;
+  font-family: var(--font-roboto);
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+.user h1 span {
+  color: var(--root-color);
+}
+
+.user p {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 1rem 0;
+  font-family: var(--font-roboto);
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  padding: .5rem 3rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: var(--bg-color);
+  border: 3px solid var(--white-color);
+  color: #fff;
+  border-radius: 6rem;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.btn:hover {
+  background: var(--root-color);
+  color: #333;
+  font-weight: 600;
+  letter-spacing:3px;
+}
+
+.btn i {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+/* home section styles  */
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+
+.about .row .col-1 {
+  padding: 1rem 2rem;
+  flex: 50rem;
+}
+
+.col-1 h3 {
+  font-size: 2rem;
+  color: #ddd;
+  padding: 1rem;
+  font-weight: normal;
+}
+
+.col-1 h3 span {
+  color: var(--root-color);
+}
+
+.about .row .col-2 {
+  display: flex;
+  justify-content: center;
+  flex: 50rem;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.col-2 .box {
+  padding: 2rem;
+  margin: 2rem;
+  width: 20rem;
+  border: 3px solid;
+  border-radius: 5px;
+}
+
+.box span {
+  color: var(--root-color);
+  font-size: 4rem;
+}
+
+.box h3 {
+  font-size: 2rem;
+  color: #ddd;
+  font-weight: 300;
+}
+
+/* education section styles  */
+.education .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding: 1rem 3rem;
+}
+
+.education .box-container .box {
+  width: 27rem;
+  margin: 2rem 0;
+  border-left: .5rem solid;
+  padding-left: 4rem;
+  position: relative;
+}
+
+.box-container .box span {
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  background: #222;
+  color: #fff;
+  padding: .5rem 2.5rem;
+}
+
+.box-container .box h3 {
+  font-size: 2rem;
+  color: #ddd;
+  padding: 1.5rem 0;
+}
+
+.box-container .box p {
+  text-align: justify;
+  font-size: 1.7rem;
+  color: #eee;
+}
+
+.box-container .box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background: var(--root-color);
+  border-radius: 50%;
+  line-height: 5rem;
+}
+
+/* portfolio section styles  */
+.portfolio .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.portfolio .box-container .box {
+  width: 26rem;
+  height: 20rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  border: .7rem solid #ddd;
+  padding: .5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio .box-container .box:hover {
+  border: .7rem solid #f53b57;
+}
+
+.portfolio .box-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box img:hover {
+  transform: scale(1.2);
+  border-radius: 1rem;
+}
+
+/* contact section styles  */
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row .content {
+  flex: 35rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.content .title{
+  font-size:3rem;
+  padding-bottom:2rem;
+  color:#ddd;
+  letter-spacing:3px;
+}
+.content .info h3{
+  font-size:2rem;
+  font-weight: normal;
+  padding:1rem 0;
+}
+.content .info h3 i{
+  padding-right:1.5rem;
+  color:var(--root-color);
+}
+
+.contact .row form {
+  flex: 50rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.contact .row form .box {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  background: #03071e;
+  color: #fff;
+  border-radius:1rem;
+}
+
+.contact .row form .message {
+  height: 14rem;
+  resize: none;
+}
+
+::placeholder {
+  color: var(--root-color);
+}
+
+/* scoll top img styles  */
+.top{
+  position: fixed;
+  right:2rem;
+  bottom:7.5rem;
+  z-index:1000;
+  display: none;
+}
+/* media quries add  */
+@media(max-width:1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width:991px) {
+body{
+  padding:1rem;
+}
+.home{
+  padding:0 3rem;
+}
+  header {
+    left: -120%;
+    transition: .5s;
+  }
+
+  header.toggle {
+    left: 0;
+  }
+
+  #menuBar {
+    display: block;
+  }
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+
+
+}
+
+@media (max-width:400px) {
+  header {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* .btn{
+    padding:.5rem 1.5rem;
+    font-size:1.5rem;
+    text-align: center;
+  } */
+  html {
+    font-size: 45%;
+  }
+
+  .about .row .col-2 .box {
+    width: 100%;
+  }
+
+  .education .box-container .box {
+    width: 100%;
+  }
+
+  .portfolio .box-container .box {
+    width: 100%;
+  }
+
+  .contact .row form {
+    margin: 3rem 0;
+  }
+}
