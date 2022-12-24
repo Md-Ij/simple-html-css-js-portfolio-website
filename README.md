@@ -5,4 +5,4 @@
 <br>
 <hr>
 <br>
-<img src="img/s-p-w.png" alt="image"/ style="border:3px solid #fff;">
+<img src="img/s-p-w.png" alt="image"/>
